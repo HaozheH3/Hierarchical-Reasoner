@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning ">
+    <meta property="og:title" content="Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning " />
+    <meta property="og:description" content="We propose a new paradigm to synthesize deep reasoning without RL or distillation" />
+    <meta property="og:url" content="https://github.com/multimodal-art-projection/REER_DeepWriter" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <title>Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning </title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">
+                            Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning 
+                        </h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                &dagger;<a href="https://haozheh3.github.io/" style="text-decoration: none; color: inherit;">Haozhe Wang</a><sup>&#9824;&#9827;&#9829;</sup>,
+                            </span>
+                            <span class="author-block">
+                                Qixin Xu<sup>&#10022;&#9827;</sup>,
+                            </span>
+                            <span class="author-block">
+                                Che Liu<sup>&#9831;</sup>,
+                            </span>
+                            <br>
+                            <span class="author-block">
+                                Junhong Wu<sup>&#9826;</sup>,
+                            </span>
+                            <span class="author-block">
+                                &dagger;<a href="https://cse.hkust.edu.hk/~flin/" style="text-decoration: none; color: inherit;">Fangzhen Lin</a><sup>&#9824;</sup>
+                            </span>
+                            <span class="author-block">
+                                &dagger;<a href="https://wenhuchen.github.io/" style="text-decoration: none; color: inherit;">Wenhu Chen</a><sup>&#9827;</sup>
+                            </span>
+                        </div>
+
+                        
+                        <br><br>
+                        <div class="publication-authors">
+                            <span class="author-block">
+                                Hong Kong University of Science and Technology<sup>&#9824;</sup>, University of Waterloo<sup>&#9827;</sup>, M-A-P<sup>&#9829;</sup>, 
+                                Tsinghua University<sup>&#10022;</sup>, Imperial College London<sup>&#9831;</sup>, UCAS<sup>&#9826;</sup> 
+                            </span>
+                            <br><br>
+                            <span class="author-block">Corresponding to:</span>
+                            <span class="author-block"><a href="mailto:jasper.whz@outlook.com">jasper.whz@outlook.com</a>,</span>
+                            <span class="author-block"><a href="mailto:wenhu.chen@uwaterloo.ca">wenhu.chen@uwaterloo.ca</a></span>
+                            
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- GitHub link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2509.03646" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="ai ai-arxiv"></i>
+                                    </span>
+                                    <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                  <a href="https://huggingface.co/collections/" target="_blank"
+                                  class="external-link button is-normal is-rounded is-dark">
+                                      <span class="icon">
+                                        🤗
+                                      </span>
+                                      <span>Models</span>
+                                  </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="margin-bottom: 2vh;margin-top: -6vh;">
+          <!-- Abstract. -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">🔔News</h2>
+              <div class="content has-text-justified">
+                <p>
+                    <b>🔥[2025-09-09] The <a href="https://arxiv.org/pdf/2509.03646">paper</a> is out 🚀. We are now working on releasing code and models.</b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--/ Abstract. -->
+      </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container" style="margin-bottom: 2vh;margin-top: -6vh;">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">How Do LLMs *Really* Learn to Reason?</h2>
+              <div class="content has-text-justified">
+                <p>
+                    Reinforcement Learning (RL) has been a game-changer for teaching LLMs complex reasoning, but how it works has been a mystery. Puzzling behaviors like sudden "aha moments," and performance boosts from longer answers ("length-scaling") have been observed, but not understood.
+                </p>
+                <p>
+                    In this work, we reveal that these are not random quirks. They are the hallmarks of an <b>emergent reasoning hierarchy</b>, where the model learns to reason much like a human: by separating high-level strategic planning from low-level procedural execution. We show this process unfolds in two distinct phases and leverage this insight to create a more efficient RL algorithm.
+                </p>
+                <div class="content has-text-centered">
+                    <img src="static/images/teaser.png" alt="Diagram illustrating the separation of high-level planning and low-level execution in reasoning." width="100%"/>
+                    <p><i>LLM reasoning mirrors human cognition by separating high-level strategic planning from low-level execution.</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    </section>
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">A Two-Phase Dynamic to Enhanced Reasoning through RL</h2>
+              <div class="content has-text-justified">
+                <p>
+                  Our analysis reveals that RL-trained LLMs don't improve monolithically. 
+                  Instead, they follow a two-phase learning dynamic where the "bottleneck" to better performance shifts over time.
+                </p>
+                <p>
+                    <b>Phase 1: Forging a Reliable Procedural Engine.</b> 
+                    Initially, the model focuses on mastering the basics. It learns to perform low-level steps like formatting, arithmetic and variable substitutions reliably. 
+                    We observe this as a sharp drop in uncertainty (perplexity and token entropy) for these "execution tokens."
+                    For strong models or with easy-to-learn data, this phase can be brief or even absent, as the model already possess reliable mastery of foundational low-level skills, often only requiring minimal adjustment on formatting tokens.
+                </p>
+                <p>
+                    <b>Phase 2: Mastering High-Level Strategic Planning.</b> Once the model lays a solid foundation on its low-level skills, the learning frontier shifts. 
+                    Performance gains are now driven by exploring and mastering high-level strategies—like choosing a new approach, backtracking, or identifying a key theorem. 
+                    This exploration on strategic planning is the true driver of advanced reasoning, marked by a steady increase in the diversity of strategic plans, which we measure with <b>semantic entropy</b>.
+                    The trend of increased semantic entropy correlates strongly with rising accuracy and sequence length, suggesting that exploring diverse strategies is key to unlocking advanced reasoning capabilities.
+                </p>
+                <div class="content has-text-centered">
+                    <img src="static/images/analysis.png" alt="Graphs showing training dynamics: token entropy of execution tokens decreases while semantic entropy of planning tokens increases." width="100%"/>
+                    <p><i>Training dynamics reveal a two-phase process. The model first consolidates procedural skills (left, decreasing entropy) before exploring high-level strategies (right, increasing semantic diversity), which correlates with rising accuracy.</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Hierarchy-Aware Credit Assignment: Focusing on What Matters</h2>
+              <div class="content has-text-justified">
+                <p>
+                    This insight exposes a core inefficiency in current RL methods like GRPO: they apply optimization pressure agnostically to all tokens, diluting the learning signal. If the key to advanced reasoning is mastering strategy, why waste effort on already-learned procedural steps?
+                </p>
+                <p>
+                    We introduce <b>HICRA (Hierarchy-Aware Credit Assignment)</b>, an algorithm that concentrates optimization pressure directly on the high-impact planning tokens. By amplifying the learning signal for strategic moves, HICRA accelerates the discovery and reinforcement of effective reasoning patterns.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Results: Targeted Exploration Wins</h2>
+              <div class="content has-text-justified">
+                <p>
+                    HICRA consistently outperforms strong GRPO baselines across multiple text-only and vision-language models. 
+                </p>
+                 <div class="content has-text-centered">
+                    <img src="static/images/main.png" alt="Table showing HICRA outperforming GRPO and Base models on math reasoning benchmarks." width="100%"/>
+                </div>
+                <br>
+                <p>
+                    Our analysis shows that RL's primary benefit comes from correcting high-level <b>strategic faults</b>, not minor calculation errors. HICRA's focused approach is simply more efficient at this.
+                </p>
+                <div class="content has-text-centered">
+                    <img src="static/images/errortypes.png" alt="" width="100%"/>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Semantic Function vs. High-Entropy: How to identify Planning Tokens or "Fork Tokens"?</h2>
+              <div class="content has-text-justified">
+                <p>
+                    Other work has proposed using high-entropy "fork tokens" as a proxy for decision points in a model's reasoning process. We investigated the relationship between these entropy-based tokens and our <b>functionally-defined planning tokens</b>.
+                </p>
+                <p>
+                    We found a crucial asymmetry: while most of our planning tokens do exhibit high entropy (as expected for strategic choices), the reverse is not true. <b>Most high-entropy tokens are not planning tokens</b>. They often correspond to simple variations in phrasing or low-level calculations that don't change the overall strategy. This highlights the limitation of solely using entropy to identify tokens that have exact semantic functions. 
+                </p>
+                <div class="content has-text-centered">
+                    <img src="static/images/forktokens.png" alt="Graphs showing that most planning tokens are high-entropy, but most high-entropy tokens are not planning tokens." width="100%"/>
+                    <p><i>While a majority of functionally-defined planning tokens are high-entropy (left), high-entropy tokens are not a good proxy for planning tokens, as most of them serve other functions (right)[cite: 521, 522].</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">What metric is a good compass for tracking exploration?</h2>
+              <div class="content has-text-justified">
+                <p>
+                    Measuring strategic exploration accurately is crucial for diagnosing policy learning. 
+                    However, we find that common metric like token-level entropy can be misleading.
+                </p>
+                <ul>
+                    <li><b>Token-Level Entropy's Flaw</b>: This metric sometimes converges to a lower level, interpreted as "collapses" by practitioners. 
+                        However, this is incorrect. 
+                        Token-level entropy is dominated by the vast number of low-level execution tokens, which are often destined to become predictable, i.e., with low entropy. 
+                        <strong>The decrease of token entropy in these low-level tokens pulls the global average token entropy down. </strong>
+                        But this does not imply that exploration has ceased. In contrast, as long as the semantic entropy remains a high level, the model is actively exploring new high-level strategies, and the performance continues to improve.</li>
+                    <li><b>Pass@K's Blind Spot</b>: This metric, which measures success rate in K attempts, can sometimes <b>saturate</b>, e.g., all queries has chances to be solved, making it useless for distinguishing between methods or tracking ongoing learning dynamics later in training.</li>
+                </ul>
+                <p>
+                    <b>Semantic Entropy</b> avoids these pitfalls. It directly measures the diversity of meaningful strategic plans. 
+                    As shown below, semantic entropy remains a powerful differentiator, revealing HICRA’s continued strategic exploration even when token entropy has collapsed and Pass@8 has saturated. This makes it a far more reliable compass for tracking true reasoning development.
+                </p>
+                <div class="content has-text-centered">
+                    <img src="static/images/entropy.png" alt="Graphs showing token entropy collapsing and Pass@8 saturating, while semantic entropy continues to differentiate HICRA from GRPO." width="100%"/>
+                    <p><i>Token entropy (far right) collapses and Pass@8 (second from right) saturates, becoming useless[cite: 481, 484, 486]. [cite_start]In contrast, Semantic Entropy (far left) clearly shows HICRA's sustained exploration advantage, which correlates with better final accuracy[cite: 481, 489].</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+	<!-- BibTeX citation -->
+	<section class="section" id="BibTeX">
+	    <div class="container is-max-desktop content">
+	        <h2 class="title">Reference</h2>
+	        If you find our work useful, please give us a free cite:
+	        <pre><code>
+@article{hicra,
+    title={Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning},
+    author={Wang, Haozhe and Xu, Qixin and Liu, Che and Wu, Junhong and Lin, Fangzhen and Chen, Wenhu},
+    journal={arXiv preprint:2509.03646},
+    year={2025}
+}
+	        </code></pre>
+	    </div>
+	</section>
+
+	<footer class="footer">
+	    <div class="container">
+	        <div class="columns is-centered">
+	            <div class="column is-8">
+	                <div class="content has-text-centered">
+	                    <p>
+	                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+</body>
+</html>
