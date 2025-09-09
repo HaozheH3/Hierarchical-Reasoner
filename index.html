@@ -44,7 +44,7 @@
                             </span>
                             <br>
                             <span class="author-block">
-                                &dagger;<a href="https://cse.hkust.edu.hk/~flin/" style="text-decoration: none; color: inherit;">Fangzhen Lin</a><sup>&#9824;</sup>
+                                &dagger;<a href="https://cse.hkust.edu.hk/~flin/" style="text-decoration: none; color: inherit;">Fangzhen Lin</a><sup>&#9824;</sup>,
                             </span>
                             <span class="author-block">
                                 &dagger;<a href="https://wenhuchen.github.io/" style="text-decoration: none; color: inherit;">Wenhu Chen</a><sup>&#9827;</sup>
@@ -171,11 +171,14 @@
                     <b>Phase 2: Mastering High-Level Strategic Planning.</b> 
                     Once the model lays a solid foundation on its low-level skills, the learning frontier shifts. 
                     Performance gains are now driven by exploring and mastering high-level strategies—like choosing a new approach, backtracking, or identifying a key theorem. 
+                    </p>
+                <p>
                     We confirm this by measuring the <b>semantic entropy</b> of the model's planning tokens, which suggests the diversity of the model's high-level strategic plans.
                     The semantic entropy of planning tokens (red line, third column) shows a steady increase from the beginning or from a turning point. 
                     This increasing semantic entropy is parallel with increasing reasoning accuracy and length scaling. 
-                    This observation suggests that the policy is  actively expanding its repertoire of strategic plans and in the meantime obtain sustained improvement in reasoning. 
+                    This observation suggests that the policy is  <strong>actively expanding its repertoire of strategic plans</strong> to obtain <strong>sustained improvement in reasoning</strong> simultaneously. 
                     This contrasts sharply with the sharp decrease in token-level entropy seen during the initial procedural consolidation phase.
+                
                 </p>
                 
               </div>
@@ -224,7 +227,7 @@
                     HICRA consistently outperforms strong GRPO baselines across multiple text-only and vision-language models. 
                 </p>
                  <div class="content has-text-centered">
-                    <img src="static/images/main.png" alt="Table showing HICRA outperforming GRPO and Base models on math reasoning benchmarks." width="100%"/>
+                    <img src="static/images/main.png" alt="Table showing HICRA outperforming GRPO and Base models on math reasoning benchmarks." width="70%"/>
                  </div>
               </div>
               <h2 class="title is-3">Training Dynamics of Error Types</h2>
@@ -251,7 +254,7 @@
                 </p>
                 <div class="content has-text-centered">
                     <img src="static/images/forktokens.png" alt="Graphs showing that most planning tokens are high-entropy, but most high-entropy tokens are not planning tokens." width="100%"/>
-                    <p><i>While a majority of functionally-defined planning tokens are high-entropy (left), high-entropy tokens are not a good proxy for planning tokens, as most of them serve other functions (right)[cite: 521, 522].</i></p>
+                    <p><i>While a majority of functionally-defined planning tokens are high-entropy (left), high-entropy tokens are not a good proxy for planning tokens, as most of them serve other functions (right).</i></p>
                 </div>
               </div>
             </div>
@@ -278,7 +281,7 @@
                 </p>
                 <div class="content has-text-centered">
                     <img src="static/images/entropy.png" alt="Graphs showing token entropy collapsing and Pass@8 saturating, while semantic entropy continues to differentiate HICRA from GRPO." width="100%"/>
-                    <p><i>Token entropy (far right) collapses and Pass@8 (second from right) saturates, becoming useless[cite: 481, 484, 486]. In contrast, Semantic Entropy (far left) clearly shows HICRA's sustained exploration advantage, which correlates with better final accuracy[cite: 481, 489].</i></p>
+                    <p><i>Token entropy (far right) collapses and Pass@8 (second from right) saturates, becoming useless. In contrast, Semantic Entropy (far left) clearly shows HICRA's sustained exploration advantage, which correlates with better final accuracy.</i></p>
                 </div>
               </div>
             </div>
