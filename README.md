@@ -20,7 +20,7 @@ In this work, we reveal that these are not random quirks. They are the hallmarks
 
 ## 🚀 Release Plan
 
-We are committed to making our work accessible and reproducible. 
+We will release the training recipe on top of VeRL and all models.
 
 Stay tuned for updates\!
 
