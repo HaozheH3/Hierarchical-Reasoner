@@ -2,9 +2,9 @@
 
 # Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning
 
-[Haozhe Wang](https://haozheh3.github.io), Qixin Xu, Che Liu, Junhong Wu, [Fangzhen Lin](https://cse.hkust.edu.hk/~flin/), [Wenhu Chen](https://wenhuchen.github.io/)
+[Haozhe Wang$^{♠,♥,♦}$](https://haozheh3.github.io), Qixin Xu$^{♥,♦}$, Che Liu$^{♤}$, Junhong Wu$^{♡}$, [$^\dagger$Fangzhen Lin$^{♠}$](https://cse.hkust.edu.hk/~flin/), [$^\dagger$Wenhu Chen$^{♥}$](https://wenhuchen.github.io/)
 
-*Hong Kong Univerisity of Science and Technology, University of Waterloo, M-A-P, Tsinghua Univerisity, Imperial College London, UCAS*
+*The Hong Kong University of Science and Technology$^{♠}$, University of Waterloo$^{♥}$, M-A-P$^{♦}$, Tsinghua University$^{♣}$, Imperial College London$^{♤}$, UCAS$^{♡}$*
 
 [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.03646) [![Hugging Face Collection](https://img.shields.io/badge/Models-fcd022?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/collections/TIGER-Lab/hierarchical-reasoner-68c183451eadc248ee43ff59)
 
